@@ -1,0 +1,13 @@
+{
+  "name": "inventrix",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "pnpm --filter api dev & pnpm --filter frontend dev",
+    "build": "pnpm --filter api build && pnpm --filter frontend build",
+    "start": "pnpm --filter api start"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}
